@@ -2,6 +2,7 @@
 
 html {
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: calc(100vh - 70px);
   flex-direction: column;
 }
 
@@ -40,7 +41,7 @@ body {
 .form h1 {
   font-size: 1.73rem;
   margin-bottom: 30px;
-  text-shadow: 0px 0px 10px rgb(204, 208, 212);
+  text-shadow: 0px 0px 4px rgb(204, 208, 212);
 }
 
 .form input {
@@ -89,12 +90,11 @@ input[type="text"]:focus {
   transform: scale(1.01);
 }
 .credits {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 300 !important;
-  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  text-align: center;
+  margin: 20px;
+  color: rgb(224, 224, 224);
 }
 
 /* Range Slider CSS */
